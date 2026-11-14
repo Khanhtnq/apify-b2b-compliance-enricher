@@ -1,0 +1,15 @@
+{
+  "actorSpecification": 1,
+  "name": "b2b-compliance-enricher",
+  "title": "Global B2B Entity, SEC EDGAR & CVE Supply-Chain Enricher",
+  "description": "Enriches B2B companies with official SEC EDGAR filings, CVE Open-Source vulnerability reports, and RDAP domain telemetry. Zero residential proxy burn.",
+  "version": "1.0.0",
+  "meta": {
+    "templateId": "project_empty"
+  },
+  "input": "./input_schema.json",
+  "dataset": "./dataset_schema.json",
+  "pricing": {
+    "pricingModel": "PAY_PER_EVENT"
+  }
+}

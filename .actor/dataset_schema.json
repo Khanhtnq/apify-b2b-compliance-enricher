@@ -1,0 +1,37 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "companyName": {
+      "type": "string",
+      "description": "Name of the audited organization"
+    },
+    "secEdgar": {
+      "type": "object",
+      "description": "Official SEC EDGAR filings metadata and SIC code"
+    },
+    "supplyChainCve": {
+      "type": "object",
+      "description": "OSV.dev vulnerability security audit report"
+    },
+    "domainRdap": {
+      "type": "object",
+      "description": "RDAP domain telemetry and registrar data"
+    },
+    "complianceScore": {
+      "type": "number",
+      "description": "Composite compliance risk score (0-100)"
+    },
+    "enrichedAt": {
+      "type": "string",
+      "description": "ISO timestamp of enrichment"
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "Compliance Overview",
+      "transformation": {
+        "fields": ["companyName", "complianceScore", "enrichedAt"]
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "events": {
+    "company-enriched": {
+      "eventTitle": "Company Profile Enriched",
+      "eventDescription": "Charged whenever one target company is completely audited across SEC EDGAR, OSV CVE, and RDAP registration.",
+      "priceUsd": 0.05
+    }
+  }
+}

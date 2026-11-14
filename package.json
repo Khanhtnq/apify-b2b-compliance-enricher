@@ -1,0 +1,17 @@
+{
+  "name": "apify-b2b-compliance-actor",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Apify PPE Actor: Global B2B Entity, SEC EDGAR & CVE Supply-Chain Enricher",
+  "main": "src/main.mjs",
+  "scripts": {
+    "start": "node src/main.mjs",
+    "test": "node test_live_actor.mjs"
+  },
+  "dependencies": {
+    "apify": "^3.2.6",
+    "crawlee": "^3.11.5"
+  },
+  "author": "Trần Ngọc Quốc Khánh <Khanhtnq>",
+  "license": "Apache-2.0"
+}

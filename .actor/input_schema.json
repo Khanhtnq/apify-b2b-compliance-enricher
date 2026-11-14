@@ -1,0 +1,48 @@
+{
+  "title": "B2B Compliance & Entity Enricher Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "companies": {
+      "title": "Target Companies",
+      "type": "array",
+      "description": "List of companies to enrich with SEC CIK, domain, or package names.",
+      "prefill": [
+        {
+          "name": "Apple Inc.",
+          "cik": "0000320193",
+          "domain": "apple.com",
+          "packageName": "swift",
+          "ecosystem": "SwiftURL"
+        },
+        {
+          "name": "Microsoft Corporation",
+          "cik": "0000789019",
+          "domain": "microsoft.com",
+          "packageName": "express",
+          "ecosystem": "npm"
+        }
+      ],
+      "editor": "json"
+    },
+    "includeSecFilings": {
+      "title": "Include SEC EDGAR Filings",
+      "type": "boolean",
+      "description": "Query official data.sec.gov for recent 10-K, 10-Q, and 8-K submissions.",
+      "default": true
+    },
+    "includeCveAudit": {
+      "title": "Include Open Source CVE Audit",
+      "type": "boolean",
+      "description": "Query Google OSV database (api.osv.dev) for software supply chain vulnerabilities.",
+      "default": true
+    },
+    "includeDomainRdap": {
+      "title": "Include RDAP Domain Intelligence",
+      "type": "boolean",
+      "description": "Query official RDAP servers for registrar, nameservers, and status.",
+      "default": true
+    }
+  },
+  "required": ["companies"]
+}
